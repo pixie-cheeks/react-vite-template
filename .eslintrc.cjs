@@ -2,11 +2,14 @@ module.exports = {
   env: {
     browser: true,
   },
+  overrides: [{ files: ['*.jsx', '*.js'] }],
   parserOptions: {
     ecmaVersion: 'latest',
+    ecmaFeatures: { jsx: true },
+    sourceType: 'module',
   },
   extends: ['airbnb', 'airbnb/hooks', 'plugin:react/jsx-runtime', 'prettier'],
-  ignorePatterns: ['/*', '!/src'],
+  ignorePatterns: ['*', '!src', '!src/**/*'],
   rules: {
     'no-unused-vars': 'warn',
     'no-plusplus': 'off',
