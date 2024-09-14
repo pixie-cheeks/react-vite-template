@@ -15,6 +15,9 @@ importers:
         specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
     devDependencies:
+      '@awmottaz/prettier-plugin-void-html':
+        specifier: ^1.6.1
+        version: 1.6.1(prettier@3.3.3)
       '@eslint/js':
         specifier: ^9.9.0
         version: 9.10.0
@@ -42,6 +45,9 @@ importers:
       globals:
         specifier: ^15.9.0
         version: 15.9.0
+      prettier:
+        specifier: ^3.3.3
+        version: 3.3.3
       stylelint:
         specifier: ^16.9.0
         version: 16.9.0
@@ -60,6 +66,12 @@ packages:
   '@ampproject/remapping@2.3.0':
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
     engines: {node: '>=6.0.0'}
+
+  '@awmottaz/prettier-plugin-void-html@1.6.1':
+    resolution: {integrity: sha512-fgU6NHZelQhrwO3ECTml8ca/SGpuWq+i7k1phUzj+l+jy5NmHcIkItzfmAC74+LBWt4EJQDPOfC8QgqwmhtYfA==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      prettier: 3.0.0 - 3.3.x
 
   '@babel/code-frame@7.24.7':
     resolution: {integrity: sha512-BcYH1CVJBO9tvyIZ2jVeXgSIMvGZ2FDRvDdOIVQyuklNKSsx+eppDEBq/g47Ayw+RqNFE+URvOShmf+f/qwAlA==}
@@ -1321,6 +1333,11 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
 
+  prettier@3.3.3:
+    resolution: {integrity: sha512-i2tDNA0O5IrMO757lfrdQZCc2jPNDVntV0m/+4whiDfWaTKfMNgR7Qz0NAeGz/nRqF4m5/6CLzbP4/liHt12Ew==}
+    engines: {node: '>=14'}
+    hasBin: true
+
   prop-types@15.8.1:
     resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==}
 
@@ -1638,6 +1655,10 @@ snapshots:
     dependencies:
       '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.25
+
+  '@awmottaz/prettier-plugin-void-html@1.6.1(prettier@3.3.3)':
+    dependencies:
+      prettier: 3.3.3
 
   '@babel/code-frame@7.24.7':
     dependencies:
@@ -2932,6 +2953,8 @@ snapshots:
       source-map-js: 1.2.1
 
   prelude-ls@1.2.1: {}
+
+  prettier@3.3.3: {}
 
   prop-types@15.8.1:
     dependencies:
