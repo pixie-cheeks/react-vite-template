@@ -9,8 +9,14 @@ module.exports = {
     sourceType: 'module',
   },
   extends: ['airbnb', 'airbnb/hooks', 'plugin:react/jsx-runtime', 'prettier'],
+  plugins: ['react-refresh'],
   ignorePatterns: ['*', '!src', '!src/**/*'],
   rules: {
+    'react/jsx-no-target-blank': 'off',
+    'react-refresh/only-export-components': [
+      'warn',
+      { allowConstantExport: true },
+    ],
     'no-unused-vars': 'warn',
     'no-plusplus': 'off',
     'import/extensions': ['error', 'ignorePackages'],
