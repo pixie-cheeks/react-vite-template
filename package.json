@@ -15,10 +15,10 @@
   },
   "devDependencies": {
     "@awmottaz/prettier-plugin-void-html": "^1.6.1",
-    "@types/react": "^18.3.5",
+    "@types/react": "^18.3.7",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
-    "eslint": "^8.57.0",
+    "eslint": "^8.57.1",
     "eslint-config-airbnb": "19.0.4",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.30.0",
@@ -31,7 +31,7 @@
     "stylelint": "^16.9.0",
     "stylelint-config-concentric-order": "^5.2.0",
     "stylelint-config-standard": "^36.0.1",
-    "vite": "^5.4.5"
+    "vite": "^5.4.6"
   },
   "prettier": {
     "singleQuote": true,
