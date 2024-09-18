@@ -31,7 +31,7 @@ const bemRules = {
 
 export default {
   extends: ['stylelint-config-standard', 'stylelint-config-concentric-order'],
-  ignoreFiles: ['./node_modules', './**/*.*', '!./**/*.css'],
+  ignoreFiles: ['**/*', '!src/**/*.css'],
   rules: {
     'declaration-no-important': true,
     'selector-class-pattern': [
