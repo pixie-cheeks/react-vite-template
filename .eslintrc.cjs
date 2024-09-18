@@ -8,7 +8,13 @@ module.exports = {
     ecmaFeatures: { jsx: true },
     sourceType: 'module',
   },
-  extends: ['airbnb', 'airbnb/hooks', 'plugin:react/jsx-runtime', 'prettier'],
+  extends: [
+    'airbnb',
+    'airbnb/hooks',
+    'plugin:react/jsx-runtime',
+    'plugin:unicorn/recommended',
+    'prettier',
+  ],
   plugins: ['react-refresh'],
   ignorePatterns: ['*', '!src', '!src/**/*'],
   rules: {
@@ -22,6 +28,12 @@ module.exports = {
     'no-plusplus': 'off',
     'import/extensions': ['error', 'ignorePackages'],
     'no-param-reassign': ['error', { props: false }],
+    'unicorn/better-regex': 'warn',
+    'unicorn/numeric-separators-style': [
+      'error',
+      { number: { minimumDigits: 0 } },
+    ],
+    'unicorn/filename-case': ['error', { cases: { pascalCase: true } }],
 
     'lines-between-class-members': [
       'error',
