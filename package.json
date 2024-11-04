@@ -38,5 +38,14 @@
     "plugins": [
       "@awmottaz/prettier-plugin-void-html"
     ]
+  },
+  "stylelint": {
+    "extends": [
+      "@pixie-cheeks/stylelint-config"
+    ],
+    "ignoreFiles": [
+      "**/*",
+      "!src/**/*.css"
+    ]
   }
 }
