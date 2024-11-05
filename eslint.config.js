@@ -3,7 +3,7 @@ import pluginReactRefresh from 'eslint-plugin-react-refresh';
 
 export default [
   {
-    files: ['**/*.{jsx,js}'],
+    files: ['**/*.{jsx,js,cjs}'],
   },
   ...pixie.react,
   {
