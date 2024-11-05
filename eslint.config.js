@@ -18,7 +18,7 @@ export default [
       'react/prop-types': 'off',
       'import-x/no-extraneous-dependencies': [
         'error',
-        // All js/jsx files in the root folder can have devDeps
+        // All js/cjs files in the root folder can have devDeps
         { devDependencies: ['*.{js,cjs}'], optionalDependencies: false },
       ],
     },
