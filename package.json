@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
+    "lint": "eslint",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -15,12 +15,13 @@
   },
   "devDependencies": {
     "@awmottaz/prettier-plugin-void-html": "^1.6.1",
-    "@pixie-cheeks/eslint-config": "^3.1.0",
+    "@pixie-cheeks/eslint-config": "^7.0.0",
     "@pixie-cheeks/stylelint-config": "^1.1.0",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.3",
     "eslint": "^9.14.0",
+    "eslint-plugin-react-refresh": "^0.4.14",
     "postcss-preset-env": "^10.0.9",
     "prettier": "^3.3.3",
     "stylelint": "^16.10.0",
