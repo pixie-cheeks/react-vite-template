@@ -2,6 +2,7 @@ import pixie from '@pixie-cheeks/eslint-config';
 import pluginReactRefresh from 'eslint-plugin-react-refresh';
 import vitest from '@vitest/eslint-plugin';
 
+/** @type {import('eslint').Linter.Config[]} */
 export default [
   {
     files: ['**/*.{jsx,js,cjs}'],
