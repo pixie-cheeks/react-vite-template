@@ -20,7 +20,7 @@ export default [
         'error',
         // All js/cjs files in the root folder can have devDeps
         {
-          devDependencies: ['*.{js,cjs}', '**/*.test.*'],
+          devDependencies: ['*.{js,cjs}', '**/*.test.*', 'src/test-setup.js'],
           optionalDependencies: false,
         },
       ],
