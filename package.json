@@ -56,7 +56,8 @@
       "prettier --write --ignore-unknown"
     ],
     "*.{js,cjs,jsx}": [
-      "eslint --max-warnings 0"
+      "eslint --max-warnings 0",
+      "vitest related --run"
     ],
     "*.css": [
       "stylelint"
