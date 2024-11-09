@@ -31,11 +31,6 @@ export default [
   {
     files: ['**/*.test.*'],
     plugins: { vitest },
-    languageOptions: {
-      globals: {
-        ...vitest.environments.env.globals,
-      },
-    },
     rules: { ...vitest.configs.recommended.rules },
   },
 ];
