@@ -1,9 +1,11 @@
-describe('something truthy and falsy', () => {
-  it('true to be true', () => {
-    expect(true).toBe(true);
-  });
+import { render, screen } from '@testing-library/react';
+import { describe, it, expect } from 'vitest';
+import App from './App.jsx';
 
-  it('false to be false', () => {
-    expect(false).toBe(false);
+describe('App', () => {
+  it('renders main text', () => {
+    render(<App />);
+
+    expect(screen.getByText('Hello World!')).toBeInTheDocument();
   });
 });
