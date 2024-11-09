@@ -19,7 +19,10 @@ export default [
       'import-x/no-extraneous-dependencies': [
         'error',
         // All js/cjs files in the root folder can have devDeps
-        { devDependencies: ['*.{js,cjs}'], optionalDependencies: false },
+        {
+          devDependencies: ['*.{js,cjs}', '**/*.test.*'],
+          optionalDependencies: false,
+        },
       ],
     },
   },
