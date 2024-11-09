@@ -1,5 +1,6 @@
 import pixie from '@pixie-cheeks/eslint-config';
 import pluginReactRefresh from 'eslint-plugin-react-refresh';
+import vitest from '@vitest/eslint-plugin';
 
 export default [
   {
@@ -25,5 +26,15 @@ export default [
         },
       ],
     },
+  },
+  {
+    files: ['**/*.test.*'],
+    plugins: { vitest },
+    languageOptions: {
+      globals: {
+        ...vitest.environments.env.globals,
+      },
+    },
+    rules: { ...vitest.configs.recommended.rules },
   },
 ];

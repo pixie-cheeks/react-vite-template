@@ -39,6 +39,9 @@ importers:
       '@vitejs/plugin-react':
         specifier: ^4.3.3
         version: 4.3.3(vite@5.4.10)
+      '@vitest/eslint-plugin':
+        specifier: ^1.1.7
+        version: 1.1.7(@typescript-eslint/utils@8.13.0(eslint@9.14.0)(typescript@5.6.3))(eslint@9.14.0)(typescript@5.6.3)(vitest@2.1.4(jsdom@25.0.1))
       eslint:
         specifier: ^9.14.0
         version: 9.14.0
@@ -840,6 +843,19 @@ packages:
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       vite: ^4.2.0 || ^5.0.0
+
+  '@vitest/eslint-plugin@1.1.7':
+    resolution: {integrity: sha512-pTWGW3y6lH2ukCuuffpan6kFxG6nIuoesbhMiQxskyQMRcCN5t9SXsKrNHvEw3p8wcCsgJoRqFZVkOTn6TjclA==}
+    peerDependencies:
+      '@typescript-eslint/utils': '>= 8.0'
+      eslint: '>= 8.57.0'
+      typescript: '>= 5.0.0'
+      vitest: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+      vitest:
+        optional: true
 
   '@vitest/expect@2.1.4':
     resolution: {integrity: sha512-DOETT0Oh1avie/D/o2sgMHGrzYUFFo3zqESB2Hn70z6QB1HrS2IQ9z5DfyTqU8sg4Bpu13zZe9V4+UTNQlUeQA==}
@@ -3650,6 +3666,14 @@ snapshots:
       vite: 5.4.10
     transitivePeerDependencies:
       - supports-color
+
+  '@vitest/eslint-plugin@1.1.7(@typescript-eslint/utils@8.13.0(eslint@9.14.0)(typescript@5.6.3))(eslint@9.14.0)(typescript@5.6.3)(vitest@2.1.4(jsdom@25.0.1))':
+    dependencies:
+      '@typescript-eslint/utils': 8.13.0(eslint@9.14.0)(typescript@5.6.3)
+      eslint: 9.14.0
+    optionalDependencies:
+      typescript: 5.6.3
+      vitest: 2.1.4(jsdom@25.0.1)
 
   '@vitest/expect@2.1.4':
     dependencies:
