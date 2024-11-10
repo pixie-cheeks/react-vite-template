@@ -6,6 +6,7 @@ import vitest from '@vitest/eslint-plugin';
 export default [
   { files: ['**/*.{jsx,js,cjs}'] },
   { ignores: ['dist'] },
+  ...pixie.base,
   ...pixie.react,
   {
     plugins: {
@@ -38,4 +39,5 @@ export default [
     plugins: { vitest },
     rules: { ...vitest.configs.recommended.rules },
   },
+  pixie.prettier,
 ];

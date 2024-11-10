@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@awmottaz/prettier-plugin-void-html": "^1.6.1",
-    "@pixie-cheeks/eslint-config": "^7.1.0",
+    "@pixie-cheeks/eslint-config": "^8.0.0",
     "@pixie-cheeks/stylelint-config": "^1.1.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.0.1",
