@@ -4,12 +4,8 @@ import vitest from '@vitest/eslint-plugin';
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
-  {
-    files: ['**/*.{jsx,js,cjs}'],
-  },
-  {
-    ignores: ['dist'],
-  },
+  { files: ['**/*.{jsx,js,cjs}'] },
+  { ignores: ['dist'] },
   ...pixie.react,
   {
     plugins: {
@@ -29,6 +25,12 @@ export default [
           optionalDependencies: false,
         },
       ],
+    },
+  },
+  {
+    files: ['src/**/*'],
+    rules: {
+      'n/no-unsupported-features/node-builtins': 'off',
     },
   },
   {
