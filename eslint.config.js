@@ -7,6 +7,9 @@ export default [
   {
     files: ['**/*.{jsx,js,cjs}'],
   },
+  {
+    ignores: ['dist'],
+  },
   ...pixie.react,
   {
     plugins: {
