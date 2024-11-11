@@ -1,24 +1,22 @@
-import { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 
-function Clock() {
-  const [counter, setCounter] = useState(0);
-
-  useEffect(() => {
-    const key = setInterval(() => {
-      setCounter((count) => count + 1);
-    }, 1_000);
-
-    return () => clearInterval(key);
-  }, []);
-
-  return <p>{counter} seconds have passed.</p>;
+function RenderName({ name }) {
+  return <div>{name}</div>;
 }
+
+RenderName.propTypes = {
+  name: PropTypes.string,
+};
+
+RenderName.defaultProps = {
+  name: 'Zach',
+};
 
 function App() {
   return (
     <>
       <p>Hello World!</p>
-      <Clock />
+      <RenderName />
     </>
   );
 }
