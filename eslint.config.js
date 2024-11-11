@@ -1,6 +1,8 @@
 import pixie from '@pixie-cheeks/eslint-config';
 import pluginReactRefresh from 'eslint-plugin-react-refresh';
-import vitest from '@vitest/eslint-plugin';
+import pluginVitest from '@vitest/eslint-plugin';
+import pluginTestingLibrary from 'eslint-plugin-testing-library';
+import pluginJestDom from 'eslint-plugin-jest-dom';
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
@@ -36,8 +38,16 @@ export default [
   },
   {
     files: ['**/*.test.*'],
-    plugins: { vitest },
-    rules: { ...vitest.configs.recommended.rules },
+    plugins: {
+      vitest: pluginVitest,
+      'testing-library': pluginTestingLibrary,
+      'jest-dom': pluginJestDom,
+    },
+    rules: {
+      ...pluginVitest.configs.recommended.rules,
+      ...pluginTestingLibrary.configs['flat/react'].rules,
+      ...pluginJestDom.configs['flat/recommended'].rules,
+    },
   },
   pixie.prettier,
 ];
