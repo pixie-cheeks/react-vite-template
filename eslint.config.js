@@ -19,7 +19,6 @@ export default [
         'warn',
         { allowConstantExport: true },
       ],
-      'unicorn/prevent-abbreviations': 'off',
       'import-x/no-extraneous-dependencies': [
         'error',
         // All js/cjs files in the root folder can have devDeps
