@@ -20,15 +20,6 @@ export default [
         { allowConstantExport: true },
       ],
       'react/prop-types': 'off',
-      'jsx-a11y/label-has-associated-control': [
-        'error',
-        {
-          labelAttributes: ['label'],
-          controlComponents: [],
-          depth: 25,
-          assert: 'either',
-        },
-      ],
       'import-x/no-extraneous-dependencies': [
         'error',
         // All js/cjs files in the root folder can have devDeps
