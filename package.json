@@ -22,7 +22,7 @@
   "devDependencies": {
     "@awmottaz/prettier-plugin-void-html": "^1.6.1",
     "@pixie-cheeks/eslint-config": "^8.2.0",
-    "@pixie-cheeks/stylelint-config": "^1.1.0",
+    "@pixie-cheeks/stylelint-config": "^2.0.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.0.1",
     "@testing-library/user-event": "^14.5.2",
@@ -51,11 +51,22 @@
   },
   "stylelint": {
     "extends": [
-      "@pixie-cheeks/stylelint-config"
+      "@pixie-cheeks/stylelint-config",
+      "@pixie-cheeks/stylelint-config/bem"
     ],
     "ignoreFiles": [
       "**/*",
       "!src/**/*.css"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "**/*.module.css"
+        ],
+        "extends": [
+          "@pixie-cheeks/stylelint-config/css-modules"
+        ]
+      }
     ]
   },
   "lint-staged": {
